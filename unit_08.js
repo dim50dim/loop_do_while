@@ -6,9 +6,11 @@
 
 function t1() {
     let out = '';
-    for(let i = 0; i <= 50; i++){
-        out += i + '_';
-    }
+     let i = 1;
+     while(i < 50){
+        out += i + '*';
+     }
+     i++;
     document.querySelector('.out-1').innerHTML = out;
 }
 

@@ -24,9 +24,11 @@ document.querySelector('.b-1').onclick = t1;
 
 function t2() {
     let out = '';
-    for(let i = 2; i <= 46; i+= 2) {
-        out += i + '__';
-    }
+      let i = 2;
+      while(i <= 46){
+        out += i + '*';
+        i+= 2;
+      }
     document.querySelector('.out-2').innerHTML = out;
 }
 

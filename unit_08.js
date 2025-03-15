@@ -70,7 +70,7 @@ document.querySelector('.b-4').onclick = t4;
 function t5() {
     let out = '';
     for(let i = 1;i <= 17; i++){
-        if(i % 2 ) out += i + '_' + "**";
+        if(i % 2  ) out += i + '_' + "**";
         if(i % 2 !== 0) out += i + '_' + "*";
     }
     document.querySelector('.out-5').innerHTML = out;

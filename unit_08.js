@@ -9,8 +9,9 @@ function t1() {
      let i = 1;
      while(i < 50){
         out += i + '*';
+        i++;
      }
-     i++;
+
     document.querySelector('.out-1').innerHTML = out;
 }
 

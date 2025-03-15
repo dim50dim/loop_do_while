@@ -166,7 +166,19 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку и при необходимости поменять местами значения в переменных местами, а потом запускаем цикл  while.
 
 function t9() {
-
+    let out = '';
+    let input_1 = document.querySelector('.i-91').value;
+    let input_2 = document.querySelector('.i-92').value;
+    if(input_1 > input_2) {
+        for(let i = input_2; i <= input_1; i++){
+            out += `${i}_`;
+        }
+    }else{
+        for(let i = input_1;i <= input_2;i++){
+            out += `${i}_`;
+        }
+    }
+    document.querySelector('.out-9').innerHTML = out;
 }
 
 document.querySelector('.b-9').onclick = t9;

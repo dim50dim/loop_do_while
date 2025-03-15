@@ -102,7 +102,7 @@ function t6() {
 let out = '';
  let  input = document.querySelector('.i-6').value;
   let i = 0;
-  while(i <= input.length){
+  while(i < input){
     out += '******' + '<br>';
     i++;
   }

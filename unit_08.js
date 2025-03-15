@@ -60,9 +60,11 @@ document.querySelector('.b-3').onclick = t3;
 
 function t4() {
      let out = '';
-     for(let i = 77;i >= 35;i-=3){
-        out += i + "_";
-     }
+    let i = 77;
+    while(i >= 35){
+        out += i + '*';
+        i-= 3;
+    }
      document.querySelector('.out-4').innerHTML = out;
 }
 

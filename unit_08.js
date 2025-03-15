@@ -42,9 +42,11 @@ document.querySelector('.b-2').onclick = t2;
 
 function t3() {
        let out = '';
-       for(let i = 25; i >= 7; i--){
-        out += i + '_';
-       }
+          let i = 25;
+          while(i >= 7){
+            out += i + '*';
+            i--;
+          }
        document.querySelector('.out-3').innerHTML = out;
 }
 

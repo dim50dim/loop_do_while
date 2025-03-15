@@ -102,7 +102,12 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла  while.
 
 function t7() {
-
+       let out = '';
+       let input = document.querySelector('.i-7').value;
+       for(let i = input;i >= 0;i--){
+        out += `${i}__`;
+       }
+       document.querySelector('.out-7').innerHTML = out;
 }
 
 document.querySelector('.b-7').onclick = t7;
